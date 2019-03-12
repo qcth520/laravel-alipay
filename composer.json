@@ -1,0 +1,26 @@
+{
+    "name": "qcth/thinkphp_alipay",
+    "description": "this is alipay",
+    "authors": [
+        {
+            "name": "qcth",
+            "email": "qcth@foxmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4":{
+            "qcth\\alipay\\":"src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "qcth\\alipay\\AlipayServiceProvider"
+            ],
+            "aliases": {
+                "Alipay": "qcth\\alipay\\AlipayFacade"
+            }
+        }
+    }
+}
